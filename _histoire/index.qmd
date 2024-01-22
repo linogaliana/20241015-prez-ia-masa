@@ -1,0 +1,273 @@
+# Quiz
+
+## Question 1 {.smaller}
+
+Un célèbre chercheur en IA a déclaré :
+
+. . .
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.incremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+# Réponses au quiz
+
+## Question 1 {.smaller}
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+De quand date cette citation ?
+
+. . .
+
+[Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en **1957** [voir @russell_artificial_2010]
+
+. . .
+
+et 66 ans plus tard, Yoshua Bengio répète encore la même chose [voir @radio_canada_lia_2023]
+
+> Alors que l'on pensait qu'il faudrait attendre des décennies, voire des siècles, pour que l’IA atteigne le niveau des capacité cognitives des êtres humains, moi-même et d’autres scientifiques pensons que la technologie pour y arriver pourrait être développée au cours des deux prochaines décennies, voire dans les quelques années à venir.
+
+## Question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+De quand date cette citation ?
+
+. . .
+
+Luc Julia en **2019** [voir @julia_intelligence_2019]
+
+{{< video https://www.youtube.com/embed/yuDBSbng_8o
+    width="420"
+    height="236"
+    title="L'intelligence artificelle n'existe pas"
+>}}
+
+## Question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+- QUID [@lorigny_quid_1988] créé en **1979** pour la codification automatique, arbre de décision sur base de connaissances
+- puis SICORE [@riviere_sicore_1995; @meyer_sicore_1997] créé en 1993
+
+# Une rapide histoire de l'IA
+
+## La période 1950-1970
+
+- Souvent appelée l'âge d'or de l'IA (débute en 1956)
+- Un foisonnement d'idées et d'espoirs
+  * reconnaissance de l'écriture
+  * traduction
+  * ...
+- Les fondements de l'IA ont été inventés à cette époque (_general problem solver_, réseaux de neurones)
+- Mais puissance de calcul très limitée
+- Résultats décevants, coupe des budgets en 1974
+- De 1974 à 1980 : le premier hiver de l'IA
+
+## La période 1980-1987
+
+- Systèmes experts
+- IA symbolique : moteurs de règles
+- De puissantes machines dépassées par les ordinateurs individuels à la fin des années 80
+- A l'Insee, QUID puis SICORE
+- Un second (deuxième ?) hiver de l'IA à partir de la deuxième moitié des années 80
+
+## A partir de 1993 {.smaller}
+
+- De nouveaux supercalculateurs
+- Deep Blue (IBM) bat Kasparov en 1997
+- La loi de Moore : postulat d'un doublement tous les 2 ans du nombre de transistors présents sur un microprocesseur
+- Essor du machine learning (apprentissage automatique)
+- 2015 : **modèles de diffusion**
+- 2017 : **transformers**, une architecture spécifique fondés sur le mécanisme d'attention
+- Depuis 2018 : BERT, GPT2/3 (LLM)
+- 2022-2023 : IA génératives grand public (DALL-E, ChatGPT, Midjourney...), multimodales
+
+## IA génératives : des espoirs démesurés ?
+
+::: {#fig-hype}
+![](_histoire/img/2023-hype-cycle.png)
+
+_Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
+:::
+
+## IA génératives : une bulle ? {.smaller}
+
+> Il y a trois mondes. Le premier monde de l’IA est le **monde de la recherche**, du futur. [...] Le deuxième monde de l’IA est le **monde de l’application**, du présent. Les ingénieurs utilisent les méthodes inventées par le premier monde pour construire des outils d’aide à la décision efficaces, rapides et pertinents. Le troisième monde de l’IA est le **monde du mythe, du récit**. La sphère médiatique s’empare de sujets qu’elle ne maîtrise pas et construit l’imaginaire collectif, à grand renforts d’exagération, de délires, de fantasme.
+> 
+> **Ces trois mondes sont découplés**. Les outils créés par le premier monde, celui de la science, sont réinterprétés librement par le troisième monde, celui du récit. Les scientifiques disent un possible, un potentiel, un pensable, qui est transformé par les communicants en récits parfois plausibles, souvent exagérés -- voire faux.
+
+_Anatomie d'une bulle_ [@altgr_anatomie_2023]
+
+## Et maintenant ? {.smaller}
+
+- Les limites des LLM : l'hallucination 
+  * par construction, les LLM génèrent un texte aléatoire ressemblant aux textes de la base d'entrainement
+  * mais ils possèdent une capacité de mémorisation de la base d'entrainement
+  * ils généreront donc toujours des résultats faux de façon aléatoire
+- Intérêt des LLM
+  * utiles pour faire un premier jet, avoir une base de départ
+  * le résultat doit être contrôlé, ne pas faire confiance
+- Des modèles de plus en plus gourmands, l'entraînement des LLM notamment
+  * Falcon-40B : 2000 GPU A100 pendant 2 mois
+  * GPT-3 : 175 milliards de paramètres (~$ 4,6M)
+- Few-shots et zero-shot à partir de modèles pré-entrainés
+- Un apport pour les moteurs de recherche : la recherche sémantique
+
+## La trajectoire est-elle soutenable ?
+
+- [Effet rebond](https://fr.wikipedia.org/wiki/Effet_rebond_(%C3%A9conomie))
+- Quel avenir ? des modèles de plus en plus gros ? ou plus petits et spécialisés ?
+- Quels humains sont en charge d’annoter les données pour ces modèles ?  
+  Le [Turc mécanique d'Amazon](https://www.mturk.com/) (inspiré du [Turc mécanique](https://fr.wikipedia.org/wiki/Turc_m%C3%A9canique)), [Sama](https://time.com/6247678/openai-chatgpt-kenya-workers/)
+- A l’Insee, 85% de l’empreinte environnementale du SI est lié à la fabrication du matériel
+- Lancement d'un [projet AFNOR sur l'IA frugale](https://normalisation.afnor.org/nos-solutions/afnor-spec/intelligence-artificielle-frugale/)
+
+## Et à l'Insee ?
+
+::: {.r-stack}
+
+![](_histoire/img/ai-company.jpeg){height="500"}
+
+:::
+
+## Et à l'Insee ?
+
+![](_histoire/img/data-science-related-domains.png){fig-align="center"}
+
+## Et à l'Insee ? {.smaller}
+
+- Remplacement de SICORE (IA simples) :
+  * codification de l'APE dans SIRENE
+  * codification de la PCS
+  * codification en COICOP
+
+## Codification de l'APE dans Sirene
+
+Activité
+
+```{ojs}
+// TODO : utiliser le debounce https://observablehq.com/@mbostock/debouncing-input pour ne pas sursolliciter l'API
+
+viewof activite = Inputs.text( 
+  {label: '', value: 'Crêperie', width: 800}
+)
+
+urlApe = `https://codification-ape-test.lab.sspcloud.fr/predict?nb_echos_max=3&prob_min=0&text_feature=${activite}`
+
+d3.json(urlApe).then( res => {
+  var IC, results;
+  ( {IC, ...results} = res )
+
+  IC = parseFloat(IC)
+
+  const rows = Object.values(results).map( obj => {
+    return `
+    <tr>
+      <td>${obj.code} | ${obj.libelle}</td>
+      <td>${obj.probabilite.toFixed(3)}</td>
+    </tr>
+  `
+  }).join('')
+  
+  return html`
+  <table>
+    <caption>
+      Indice de confiance : ${IC.toFixed(3)}
+    </caption>
+    <tr>
+      <th style="text-align:center;">Libellé (NA2008)</th>
+      <th>Probabilité</th>
+    </tr>
+      ${rows}
+  </table>`
+})
+```
+
+## Classifieur de produits en COICOP
+
+Nom du produit
+
+```{ojs}
+// TODO : utiliser le debounce https://observablehq.com/@mbostock/debouncing-input pour ne pas sursolliciter l'API
+viewof name = Inputs.text( 
+  {label: '', value: 'Duchesse Anne', width: 800}
+)
+
+url = `https://api.lab.sspcloud.fr/predicat/label?n=coicop&k=5&v=True&q=${name}`
+data = d3.json(url).then(res => {
+  const key = Object.keys(res.coicop)[0];
+  return res.coicop[key];
+})
+
+rows = data.map(obj => {
+  return `
+  <tr>
+    <td>${obj.label}</td>
+    <td>${obj.proba}</td>
+    <td>${obj.confiance || ''}</td>
+  </tr>
+  `
+}).join('')
+
+html`
+  <table>
+    <tr>
+      <th style="text-align:center;">Libellé</th>
+      <th>Proba</th>
+      <th>Confiance</th>
+    </tr>
+      ${rows}
+  </table>`
+```
+
+## Et à l'Insee ? {.smaller}
+
+- Test des IA génératives pour l'assistance au passage de SAS à R
+- Modèles de segmentation pour les images satellitaires
+- Assistance à l'exploitation des bilans et comptes sociaux
+- Une démarche internationale :
+  * one stop shop for AI/ML for ESS
+  * UNECE Modernstats ML group (éthique, IA générative)
+  * GB : recherche dans les publications diffusées par l'ONS
+  * FMI : aide à la génération de requêtes SDMX

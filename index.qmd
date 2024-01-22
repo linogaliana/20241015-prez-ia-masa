@@ -1,0 +1,38 @@
+---
+title: "IA : éléments historiques et techniques "
+from: markdown+emoji
+subtitle: |
+  **Romain Lesur**\
+  [Responsable du SSP Lab]{.orange}
+date: 2023-12-19
+slide-number: true
+footer: |
+  **RDE DMCSI**
+# uncomment for French presentations:
+lang: fr
+bibliography:
+  - _histoire/histoire.bib
+# for blind readers:
+slide-tone: false
+# for @olevitt:
+chalkboard: # press the B key to toggle chalkboard
+  theme: whiteboard
+# uncomment to use the multiplex mode:
+multiplex: true
+format:
+  # pick the light mode (onyxia-revealjs) or the dark mode (onyxia-dark-revealjs)
+  onyxia-revealjs:
+  #onyxia-dark-revealjs:
+    output-file: index.html
+    incremental: true
+# visual editor configuration:
+editor:
+  render-on-save: true
+---
+
+{{< include _histoire/index.qmd >}}
+
+## Pour en savoir plus
+
+::: {#refs}
+:::
