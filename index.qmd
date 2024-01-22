@@ -4,7 +4,7 @@ from: markdown+emoji
 subtitle: |
   **Romain Lesur**\
   [Responsable du SSP Lab]{.orange}
-date: 2023-12-19
+date: 2024-01-24
 slide-number: true
 footer: |
   **RDE DMCSI**
