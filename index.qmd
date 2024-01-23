@@ -7,7 +7,7 @@ subtitle: |
 date: 2024-01-24
 slide-number: true
 footer: |
-  **Réunion des chefs de départements**
+  **Réunion des chefs de département**
 # uncomment for French presentations:
 lang: fr
 bibliography:
