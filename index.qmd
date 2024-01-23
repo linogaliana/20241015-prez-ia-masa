@@ -7,7 +7,7 @@ subtitle: |
 date: 2024-01-24
 slide-number: true
 footer: |
-  **UNEDIC**
+  **Réunion des chefs de départements**
 # uncomment for French presentations:
 lang: fr
 bibliography:
