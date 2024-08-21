@@ -1,14 +1,14 @@
 ---
-title: "IA : éléments historiques et techniques "
-from: markdown+emoji
-subtitle: |
-  **Romain Lesur**\
-  [Responsable du SSP Lab]{.orange}
-date: 2024-01-24
+title: "Présentation sur l'IA"
+subtitle: "Eléments historiques et techniques"
+author:
+  - name: Lino Galiana
+    affiliations:
+      - name: "[Data scientist, Insee]{.orange}"
+date: "15/10/2024"
 slide-number: true
 footer: |
-  **Réunion des chefs de département**
-# uncomment for French presentations:
+  **Présentation au Ministère de l'Agriculture et de la Souveraineté Alimentaire**
 lang: fr
 bibliography:
   - _histoire/histoire.bib
@@ -29,6 +29,14 @@ format:
 editor:
   render-on-save: true
 ---
+
+# Un quiz pour commencer
+
+{{< include _intro/_quiz.qmd >}}
+
+
+
+## OLD
 
 {{< include _histoire/index.qmd >}}
 
