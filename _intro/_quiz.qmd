@@ -1,0 +1,87 @@
+## Question 1 {.smaller}
+
+Un célèbre chercheur en IA a déclaré :
+
+. . .
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.incremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Réponses au quiz: question 1 {.smaller}
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+De quand date cette citation ?
+
+. . .
+
+[Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en **1957** [voir @russell_artificial_2010]
+
+. . .
+
+et 66 ans plus tard, Yoshua Bengio répète encore la même chose [voir @radio_canada_lia_2023]
+
+> Alors que l'on pensait qu'il faudrait attendre des décennies, voire des siècles, pour que l’IA atteigne le niveau des capacité cognitives des êtres humains, moi-même et d’autres scientifiques pensons que la technologie pour y arriver pourrait être développée au cours des deux prochaines décennies, voire dans les quelques années à venir.
+
+## Réponses au quiz: question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+De quand date cette citation ?
+
+. . .
+
+Luc Julia en **2019** [voir @julia_intelligence_2019]
+
+{{< video https://www.youtube.com/embed/yuDBSbng_8o
+    width="420"
+    height="236"
+    title="L'intelligence artificelle n'existe pas"
+>}}
+
+## Réponses au quiz:  question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+- QUID [@lorigny_quid_1988] créé en **1979** pour la codification automatique, arbre de décision sur base de connaissances
+- puis SICORE [@riviere_sicore_1995; @meyer_sicore_1997] créé en 1993
