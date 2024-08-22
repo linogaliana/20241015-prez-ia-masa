@@ -44,6 +44,7 @@ editor:
 
 - Pascaline
 - Mechanical Turk
+- Bayes
 - Ada Lovelace
 
 ## OLD
