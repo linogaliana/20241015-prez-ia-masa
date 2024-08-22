@@ -46,6 +46,7 @@ editor:
 - Mechanical Turk
 - Bayes
 - Ada Lovelace
+- Game theory & Von Neumann
 
 ## OLD
 
