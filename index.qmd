@@ -34,7 +34,17 @@ editor:
 
 {{< include _intro/_quiz.qmd >}}
 
+# Introduction
 
+- Les 3 approches
+
+# Histoire de l'IA
+
+## Préhistoire
+
+- Pascaline
+- Mechanical Turk
+- Ada Lovelace
 
 ## OLD
 
