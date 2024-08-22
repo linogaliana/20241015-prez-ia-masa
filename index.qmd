@@ -45,6 +45,7 @@ editor:
 - Pascaline
 - Mechanical Turk
 - Bayes
+- Gauss (1809): régression linéaire
 - Ada Lovelace
 - Game theory & Von Neumann
 
