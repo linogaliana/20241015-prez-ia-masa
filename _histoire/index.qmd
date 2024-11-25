@@ -2,32 +2,10 @@
 # Une rapide histoire de l'IA
 
 
-## La période 1980-1987
 
-- Systèmes experts
-- IA symbolique : moteurs de règles
-- De puissantes machines dépassées par les ordinateurs individuels à la fin des années 80
-- A l'Insee, QUID puis SICORE
-- Un second (deuxième ?) hiver de l'IA à partir de la deuxième moitié des années 80
 
-## A partir de 1993 {.smaller}
 
-- De nouveaux supercalculateurs
-- Deep Blue (IBM) bat Kasparov en 1997
-- La loi de Moore : postulat d'un doublement tous les 2 ans du nombre de transistors présents sur un microprocesseur
-- Essor du machine learning (apprentissage automatique)
-- 2015 : **modèles de diffusion**
-- 2017 : **transformers**, une architecture spécifique fondés sur le mécanisme d'attention
-- Depuis 2018 : BERT, GPT2/3 (LLM)
-- 2022-2023 : IA génératives grand public (DALL-E, ChatGPT, Midjourney...), multimodales
 
-## IA génératives : des espoirs démesurés ?
-
-::: {#fig-hype}
-![](_histoire/img/2023-hype-cycle.png)
-
-_Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
-:::
 
 ## IA génératives : une bulle ? {.smaller}
 

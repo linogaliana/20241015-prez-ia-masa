@@ -168,19 +168,66 @@ _Anatomie d'une bulle_ [@altgr_anatomie_2023]
 
 - Les fondements de l'IA ont été inventés à cette époque:
   * Algorithmes type _general problem solver_, réseaux de neurones
-
-. . .
-
-- Mais puissance de calcul très limitée
+  * Mais puissance de calcul très limitée
 
 . . .
 
 - Résultats décevants, coupe des budgets en 1974
+  * Le premier hiver de l'IA (1974-1980)
+
+
+## L'ère des systèmes experts (années 80)
+
+- Techniques des IA symboliques:
+    + Moteurs de règles
+    + Encoder la connaissance d'experts
 
 . . .
 
-- De 1974 à 1980 : le premier hiver de l'IA
+- De puissantes machines dépassées par les ordinateurs individuels à la fin des années 80
 
+. . .
+
+- Un second (deuxième ?) hiver de l'IA à partir de la deuxième moitié des années 80
+
+
+## A partir de 1993 {.smaller}
+
+- Puissance de calcul démultipliée:
+    + Deep Blue (IBM) bat Kasparov en 1997
+    + Loi de Moore : postulat d'un doublement tous les 2 ans du nombre de transistors présents sur un microprocesseur
+
+. . .
+
+- Essor du _machine learning_
+    + 2000'-2010': apprentissage automatique dans la _tech_ puis plus largement
+    + 2015 : **modèles de diffusion**
+    + 2017 : **transformers**, une architecture spécifique fondés sur le mécanisme d'attention
+    + Depuis 2018 : BERT, GPT2/3 (LLM)
+
+. . .
+
+- 2022-2023 : IA génératives grand public (DALL-E, ChatGPT, Midjourney...)
+    + Multimodales: capacité d'ingérer et générer différents formats
+
+
+## IA génératives : des espoirs démesurés ?
+
+::: {#fig-hype}
+![](_histoire/img/2023-hype-cycle.png)
+
+_Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
+:::
+
+
+# Enjeux techniques et organisationnels de l'apprentissage
+
+## 
+
+- Démarche opérationnelle: prédire
+- Approche scoientifique adaptée
+- Enjeu du label: apprentissag esupervisé vs non supervisé
+    - Comment évaluer au delà de l'effet wahoo ? 
 
 
 {{< include _intro/_quiz.qmd >}}
