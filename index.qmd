@@ -1,6 +1,5 @@
 ---
-title: "Présentation sur l'IA"
-subtitle: "Eléments historiques et techniques"
+title: "Les enjeux de l'adoption de modèles d'apprentissage"
 author:
   - name: Lino Galiana
     affiliations:
@@ -30,32 +29,30 @@ format:
 
 # Quiz
 
-## Question 1 {.smaller}
+## Question 1 {.smaller .nonincremental}
 
 Un célèbre chercheur en IA a déclaré :
 
-. . .
 
 > Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
 
-. . .
 
 De quand date cette citation ?
 
-::: {.incremental}
+::: {.nonincremental}
 - 1957
 - 1979
 - 2019
 - 2023
 :::
 
-## Question 2 {.smaller}
+
+## Question 2 {.smaller .nonincremental}
 
 Un célèbre ingénieur en informatique a écrit :
 
 > Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
 
-. . .
 
 De quand date cette citation ?
 
@@ -87,7 +84,7 @@ De quand date cette citation ?
 
 . . .
 
-[Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en **1957** [voir @russell_artificial_2010]
+[Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en [**1957**]{.orange} [voir @RN2020]
 
 . . .
 
@@ -105,7 +102,7 @@ De quand date cette citation ?
 
 . . .
 
-Luc Julia en **2019** [voir @julia_intelligence_2019]
+Luc Julia en [**2019**]{.orange} [voir @julia_intelligence_2019]
 
 {{< video https://www.youtube.com/embed/yuDBSbng_8o
     width="420"
@@ -113,12 +110,79 @@ Luc Julia en **2019** [voir @julia_intelligence_2019]
     title="L'intelligence artificelle n'existe pas"
 >}}
 
-## Question 3 {.smaller}
+## Question 3 {.smaller .noincremental}
+
+::: {.noincremental}
 
 Quand a été créée la première intelligence artificielle à l'Insee ?
 
-- QUID [@lorigny_quid_1988] créé en **1979** pour la codification automatique, arbre de décision sur base de connaissances
-- puis SICORE [@riviere_sicore_1995; @meyer_sicore_1997] créé en 1993
+- QUID [@lorigny_quid_1988] créé en [**1979**]{.orange} pour la codification automatique, arbre de décision sur base de connaissances
+- puis SICORE [@riviere_sicore_1995; @meyer_sicore_1997] créé en [1993]{.orange}
+
+Adoption d'un modèle d'apprentissage automatique seulement en [**2022**]{.orange}:
+
+
+```{ojs}
+//| echo: false
+viewof activite = Inputs.text( 
+  {label: '', value: 'data scientist', width: 800}
+)
+```
+
+
+```{ojs}
+//| echo: false
+d3.json(urlApe).then(res => {
+  var IC, results;
+
+  ({ IC, ...results } = res);
+
+  IC = parseFloat(IC);
+
+  const rows = Object.values(results).map(obj => {
+    return `
+    <tr>
+      <td>${obj.code} | ${obj.libelle}</td>
+      <td>${obj.probabilite.toFixed(3)}</td>
+    </tr>
+  `;
+  }).join('');
+
+  const confidenceRow = `<tr>
+    <td colspan="2" style="text-align:left; "><em>Indice de confiance : ${IC.toFixed(3)}</em></td>
+  </tr>`;
+
+  const tableHTML = html`
+  <table>
+    <caption>
+      Prédiction de l'activité
+    </caption>
+    <tr>
+      <th style="text-align:center;">Libellé (NA2008)</th>
+      <th>Probabilité</th>
+    </tr>
+      ${rows}
+      ${confidenceRow}
+  </table>`;
+
+  // Now you can use the tableHTML as needed, for example, inserting it into the DOM.
+  // For example, assuming you have a container with the id "tableContainer":
+  return tableHTML;
+});
+```
+
+```{ojs}
+//| echo: false
+activite_debounce = debounce(viewof activite, 2000)
+urlApe = `https://codification-ape-test.lab.sspcloud.fr/predict?nb_echos_max=3&prob_min=0&text_feature=${activite_debounce}`
+```
+
+```{ojs}
+//| echo: false
+import {debounce} from "@mbostock/debouncing-input"
+```
+
+:::
 
 
 # Introduction
@@ -142,8 +206,8 @@ Quand a été créée la première intelligence artificielle à l'Insee ?
 . . .
 
 - Principe général: 
-    + Environnement représenté comme un ensemble de données
-    + Règles de décision adaptées à celles-ci 
+    + Environnement représenté comme un ensemble de données ($\mathbb{X}$)
+    + Règles de décision adaptées à celles-ci ($f(\mathbb{X})$)
     + Dimension fondamentalement opérationnelle
 
 
@@ -176,15 +240,16 @@ _Anatomie d'une bulle_ [@altgr_anatomie_2023]
   * Le premier hiver de l'IA (1974-1980)
 
 
-## L'ère des systèmes experts (années 80)
+## L'ère des systèmes experts (années 80) {.smaller}
 
 - Techniques des IA symboliques:
-    + Moteurs de règles
-    + Encoder la connaissance d'experts
+    + Encoder dans une machine la connaissance d'experts humains
 
 . . .
 
-- De puissantes machines dépassées par les ordinateurs individuels à la fin des années 80
+- Moteurs de règles:
+  - SI ... ET ... ALORS ...
+  - Tendent à devenir très nombreuses, difficiles à maintenir    
 
 . . .
 
@@ -202,7 +267,7 @@ _Anatomie d'une bulle_ [@altgr_anatomie_2023]
 - Essor du _machine learning_
     + 2000'-2010': apprentissage automatique dans la _tech_ puis plus largement
     + 2015 : **modèles de diffusion**
-    + 2017 : **transformers**, une architecture spécifique fondés sur le mécanisme d'attention
+    + 2017 : **transformers**, une architecture pour les problèmes complexes (langage, image, vidéo...)
     + Depuis 2018 : BERT, GPT2/3 (LLM)
 
 . . .
@@ -220,32 +285,84 @@ _Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
 :::
 
 
-# Enjeux techniques et organisationnels de l'apprentissage
+# Enjeux de l'adoption de modèles d'apprentissage
 
-## 
+## Une approche scientifique {.smaller}
 
-- Démarche opérationnelle: prédire
-- Approche scoientifique adaptée
-- Enjeu du label: apprentissag esupervisé vs non supervisé
-    - Comment évaluer au delà de l'effet wahoo ? 
+- L'objectif de l'apprentissage: détecter des régularités statistiques fines
+    - Algorithmes plutôt qu'hypothèses
+    - Modèles plus ou moins complexes selon le type de tâche: _machine learning_ -> réseaux de neurones
+
+. . .
+
+- Approche scientifique adaptée à l'extrapolation
+
+. . .
+
+![](/_histoire/img/pipeline1.png)
 
 
-{{< include _intro/_quiz.qmd >}}
+## Comment évaluer un modèle d'apprentissage ?  {.smaller}
 
-# Histoire de l'IA
+- Apprentissage supervisé: la variable qu'on essaie de prédire est mesurable
+  - Evaluation de la qualité de l'algo sur le passé est la partie "aisée"
+  - Enjeu de contrôle de la qualité des performances dans le temps
+  - Enjeu de la collecte continue de données (annotations)
 
-## Préhistoire
+. . .
 
-- Pascaline
-- Mechanical Turk
-- Bayes
-- Gauss (1809): régression linéaire
-- Ada Lovelace
-- Game theory & Von Neumann
+- Apprentissage non supervisé: on essaie de réaliser une tâche mais on n'a pas de mesure de la variable cible
+  - Exemples: profil de consommateur, sujets de discussion, etc.
+  - Collecte d'annotations pour renforcer le modèle sur des tâches données (exemple: bien répondre à des questions)
 
-## OLD
+. . .
 
-{{< include _histoire/index.qmd >}}
+::: {.callout-important}
+## Il faut évaluer au-delà de l'effet wahoo
+
+Autrement, des décisions structurantes seront prises sans évaluer les conséquences techniques et humaines.
+:::
+
+## Enjeux de l'utilisation d'un modèle {.smaller}
+
+- Investissement conséquent dans la phase de POC:
+    - Collecter et préparer de la donnée pour répondre _au mieux_ à la question
+    - Construire une équipe aux compétences diversifiées: _data scientists_, _data engineers_, devs, analystes métiers, etc.
+    - Investir dans les moyens techniques pour faire de l'IA
+
+. . .
+
+- Travail important du prototype à la production:
+    - Avoir un modèle disponible à la demande est coûteux (GPU...)
+    - Enjeux éthiques dans la prise de décision administrative ou l'usage RH
+    - Il faut allouer des moyens pour maintenir un modèle d'IA:
+        + Infrastructure, collecte de données, moyens de développements...
+
+. . .
+
+::: {.callout-note}
+## Les modèles génératifs, des enjeux spécifiques
+
+Les modèles génératifs posent des défis supplémentaires, par exemple l'hallucination.
+:::
+
+# Conclusion
+
+## Conclusion {.smaller}
+
+- Histoire de l'IA: comprendre l'intérêt des modèles, leurs domaines d'application multiples et leur place accrue dans notre société
+
+. . .
+
+- L'apprentissage est porteur de promesse
+    - Très bonnes performances pour des tâches complexes
+    - Mais ce n'est pas miraculeux (_no free lunch_)
+
+. . .
+
+- Adopter une organisation humaine et technique pour maintenir un modèle de qualité
+    - Même les meilleurs modèles nécessitent un travail humain important ([`ChatGPT`](https://time.com/6247678/openai-chatgpt-kenya-workers/))
+
 
 ## Pour en savoir plus
 

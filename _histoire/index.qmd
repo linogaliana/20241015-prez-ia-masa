@@ -63,8 +63,6 @@ _Anatomie d'une bulle_ [@altgr_anatomie_2023]
 Activité
 
 ```{ojs}
-// TODO : utiliser le debounce https://observablehq.com/@mbostock/debouncing-input pour ne pas sursolliciter l'API
-
 viewof activite = Inputs.text( 
   {label: '', value: 'Crêperie', width: 800}
 )
