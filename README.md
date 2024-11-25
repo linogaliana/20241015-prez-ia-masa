@@ -1,3 +1,3 @@
-# Réunion des chefs de département - séquence IA (24 janvier 2024)
+# Prez au MASA
 
 Intelligence artificielle : quelques éléments historiques et techniques 
