@@ -11,6 +11,7 @@ footer: |
   **Présentation au Ministère de l'Agriculture et de la Souveraineté Alimentaire**
 lang: fr
 bibliography:
+  - references.bib
   - _histoire/histoire.bib
 # for blind readers:
 slide-tone: false
@@ -25,18 +26,164 @@ format:
   #onyxia-dark-revealjs:
     output-file: index.html
     incremental: true
-# visual editor configuration:
-editor:
-  render-on-save: true
 ---
 
-# Un quiz pour commencer
+# Quiz
 
-{{< include _intro/_quiz.qmd >}}
+## Question 1 {.smaller}
+
+Un célèbre chercheur en IA a déclaré :
+
+. . .
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.incremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+. . .
+
+De quand date cette citation ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+## Question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+::: {.nonincremental}
+- 1957
+- 1979
+- 2019
+- 2023
+:::
+
+# Réponses au quiz
+
+## Question 1 {.smaller}
+
+> Mon but n'est pas de vous surprendre ou de vous choquer, mais pour résumer, nous disposons maintenant de machines qui **pensent**, **apprennent** et **créent**. En outre, leurs capacités va augmenter rapidement jusqu'à ce que, à un horizon proche, **le type des problèmes qu'elles pourront résoudre sera proche de ce que l'esprit humain peut faire**.
+
+De quand date cette citation ?
+
+. . .
+
+[Herbert Simon](https://fr.wikipedia.org/wiki/Herbert_Simon) en **1957** [voir @russell_artificial_2010]
+
+. . .
+
+et 66 ans plus tard, Yoshua Bengio répète encore la même chose [voir @radio_canada_lia_2023]
+
+> Alors que l'on pensait qu'il faudrait attendre des décennies, voire des siècles, pour que l’IA atteigne le niveau des capacité cognitives des êtres humains, moi-même et d’autres scientifiques pensons que la technologie pour y arriver pourrait être développée au cours des deux prochaines décennies, voire dans les quelques années à venir.
+
+## Question 2 {.smaller}
+
+Un célèbre ingénieur en informatique a écrit :
+
+> Les oiseaux de mauvais augure qui nous prédisent un monde délirant où les robots prendraient le pouvoir et nous domineraient, où ceux qui nous font miroiter un monde dans lequel l’intelligence artificielle résoudrait tous nos problèmes, nous racontent tous n’importe quoi.
+
+De quand date cette citation ?
+
+. . .
+
+Luc Julia en **2019** [voir @julia_intelligence_2019]
+
+{{< video https://www.youtube.com/embed/yuDBSbng_8o
+    width="420"
+    height="236"
+    title="L'intelligence artificelle n'existe pas"
+>}}
+
+## Question 3 {.smaller}
+
+Quand a été créée la première intelligence artificielle à l'Insee ?
+
+- QUID [@lorigny_quid_1988] créé en **1979** pour la codification automatique, arbre de décision sur base de connaissances
+- puis SICORE [@riviere_sicore_1995; @meyer_sicore_1997] créé en 1993
+
 
 # Introduction
 
-- Les 3 approches
+## Comment définir l'IA ? {.smaller}
+
+> « L’étude des agents [intelligents] qui reçoivent des perceptions de l’environnement et agissent. Chacun de ces agents est mis en œuvre par une fonction qui associe les perceptions aux actions, et nous couvrons différentes manières de de représenter ces fonctions, telles que les systèmes de production, les agents réactifs, les planificateurs logiques, les réseaux de neurones et les systèmes de gestion de l’information et les systèmes de théorie de la décision »
+>
+> @RN2020
+
+> « Système basé sur une machine qui est conçu pour fonctionner avec différents niveaux d’autonomie et qui peut faire preuve d’adaptabilité après son déploiement, et qui, pour des objectifs explicites ou implicites, déduit, à partir des données qu’il reçoit, comment générer des résultats tels que des prédictions, du contenu, des recommandations ou des décisions qui peuvent influencer des environnements physiques ou virtuels »
+> 
+> [AI Act européen](https://artificialintelligenceact.eu/fr/article/3/)
+
+## Comment définir l'IA ?
+
+- Définition très large:
+    + Pas que `ChatGPT`
+    + Feu de signalisation = IA dans cette définition
+
+. . .
+
+- Principe général: 
+    + Environnement représenté comme un ensemble de données
+    + Règles de décision adaptées à celles-ci 
+    + Dimension fondamentalement opérationnelle
+
+
+## Avertissement {.smaller}
+
+> Il y a trois mondes. Le premier monde de l’IA est le **monde de la recherche**, du futur. [...] Le deuxième monde de l’IA est le [**monde de l’application**]{.blue2}, du présent. Les ingénieurs utilisent les méthodes inventées par le premier monde pour construire des outils d’aide à la décision efficaces, rapides et pertinents. Le troisième monde de l’IA est le **monde du mythe, du récit**. La sphère médiatique s’empare de sujets qu’elle ne maîtrise pas et construit l’imaginaire collectif, à grand renforts d’exagération, de délires, de fantasme.
+> 
+> **Ces trois mondes sont découplés**. Les outils créés par le premier monde, celui de la science, sont réinterprétés librement par le troisième monde, celui du récit. Les scientifiques disent un possible, un potentiel, un pensable, qui est transformé par les communicants en récits parfois plausibles, souvent exagérés -- voire faux.
+
+_Anatomie d'une bulle_ [@altgr_anatomie_2023]
+
+
+# Comprendre par l'histoire ce qu'est l'IA
+
+## "L'âge d'or de l'IA" (1956-1970)
+
+
+- Un foisonnement d'idées et d'espoirs
+  * reconnaissance de l'écriture, traduction, modélisation du langage, etc.
+
+. . .
+
+- Les fondements de l'IA ont été inventés à cette époque:
+  * Algorithmes type _general problem solver_, réseaux de neurones
+
+. . .
+
+- Mais puissance de calcul très limitée
+
+. . .
+
+- Résultats décevants, coupe des budgets en 1974
+
+. . .
+
+- De 1974 à 1980 : le premier hiver de l'IA
+
+
+
+{{< include _intro/_quiz.qmd >}}
 
 # Histoire de l'IA
 
