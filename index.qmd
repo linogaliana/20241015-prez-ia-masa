@@ -27,6 +27,15 @@ format:
     incremental: true
 ---
 
+## Avertissement {.smaller}
+
+> Il y a trois mondes. Le premier monde de l’IA est le **monde de la recherche**, du futur. [...] Le deuxième monde de l’IA est le [**monde de l’application**]{.orange}, du présent. Les ingénieurs utilisent les méthodes inventées par le premier monde pour construire des outils d’aide à la décision efficaces, rapides et pertinents. Le troisième monde de l’IA est le **monde du mythe, du récit**. La sphère médiatique s’empare de sujets qu’elle ne maîtrise pas et construit l’imaginaire collectif, à grand renforts d’exagération, de délires, de fantasme.
+> 
+> **Ces trois mondes sont découplés**. Les outils créés par le premier monde, celui de la science, sont réinterprétés librement par le troisième monde, celui du récit. Les scientifiques disent un possible, un potentiel, un pensable, qui est transformé par les communicants en récits parfois plausibles, souvent exagérés -- voire faux.
+
+_Anatomie d'une bulle_ [@altgr_anatomie_2023]
+
+
 # Quiz
 
 ## Question 1 {.smaller .nonincremental}
@@ -110,9 +119,9 @@ Luc Julia en [**2019**]{.orange} [voir @julia_intelligence_2019]
     title="L'intelligence artificelle n'existe pas"
 >}}
 
-## Question 3 {.smaller .noincremental}
+## Question 3 {.smaller .nonincremental}
 
-::: {.noincremental}
+::: {.nonincremental}
 
 Quand a été créée la première intelligence artificielle à l'Insee ?
 
@@ -189,11 +198,11 @@ import {debounce} from "@mbostock/debouncing-input"
 
 ## Comment définir l'IA ? {.smaller}
 
-> « L’étude des agents [intelligents] qui reçoivent des perceptions de l’environnement et agissent. Chacun de ces agents est mis en œuvre par une fonction qui associe les perceptions aux actions, et nous couvrons différentes manières de de représenter ces fonctions, telles que les systèmes de production, les agents réactifs, les planificateurs logiques, les réseaux de neurones et les systèmes de gestion de l’information et les systèmes de théorie de la décision »
+> « L’étude des agents [intelligents] qui [reçoivent des perceptions de l’environnement et agissent]{.orange}. Chacun de ces agents est mis en œuvre par une fonction qui associe les perceptions aux actions, et nous couvrons différentes manières de de représenter ces fonctions, telles que les systèmes de production, les agents réactifs, les planificateurs logiques, les réseaux de neurones et les systèmes de gestion de l’information et les systèmes de théorie de la décision »
 >
 > @RN2020
 
-> « Système basé sur une machine qui est conçu pour fonctionner avec différents niveaux d’autonomie et qui peut faire preuve d’adaptabilité après son déploiement, et qui, pour des objectifs explicites ou implicites, déduit, à partir des données qu’il reçoit, comment générer des résultats tels que des prédictions, du contenu, des recommandations ou des décisions qui peuvent influencer des environnements physiques ou virtuels »
+> « Système basé sur une machine qui est conçu pour fonctionner avec différents niveaux d’autonomie et qui peut faire preuve d’adaptabilité après son déploiement, et qui, pour des objectifs explicites ou implicites, déduit, [à partir des données qu’il reçoit]{.orange}, comment générer des résultats tels que des prédictions, du contenu, des recommandations ou des décisions qui peuvent influencer des environnements physiques ou virtuels »
 > 
 > [AI Act européen](https://artificialintelligenceact.eu/fr/article/3/)
 
@@ -201,23 +210,14 @@ import {debounce} from "@mbostock/debouncing-input"
 
 - Définition très large:
     + Pas que `ChatGPT`
-    + Feu de signalisation = IA dans cette définition
+    + Exemple: Feu de signalisation s'adaptant à la circulation = IA dans cette définition
 
 . . .
 
 - Principe général: 
     + Environnement représenté comme un ensemble de données ($\mathbb{X}$)
     + Règles de décision adaptées à celles-ci ($f(\mathbb{X})$)
-    + Dimension fondamentalement opérationnelle
-
-
-## Avertissement {.smaller}
-
-> Il y a trois mondes. Le premier monde de l’IA est le **monde de la recherche**, du futur. [...] Le deuxième monde de l’IA est le [**monde de l’application**]{.blue2}, du présent. Les ingénieurs utilisent les méthodes inventées par le premier monde pour construire des outils d’aide à la décision efficaces, rapides et pertinents. Le troisième monde de l’IA est le **monde du mythe, du récit**. La sphère médiatique s’empare de sujets qu’elle ne maîtrise pas et construit l’imaginaire collectif, à grand renforts d’exagération, de délires, de fantasme.
-> 
-> **Ces trois mondes sont découplés**. Les outils créés par le premier monde, celui de la science, sont réinterprétés librement par le troisième monde, celui du récit. Les scientifiques disent un possible, un potentiel, un pensable, qui est transformé par les communicants en récits parfois plausibles, souvent exagérés -- voire faux.
-
-_Anatomie d'une bulle_ [@altgr_anatomie_2023]
+    + Dimension fondamentalement [__opérationnelle__]{.orange}
 
 
 # Comprendre par l'histoire ce qu'est l'IA
@@ -237,7 +237,7 @@ _Anatomie d'une bulle_ [@altgr_anatomie_2023]
 . . .
 
 - Résultats décevants, coupe des budgets en 1974
-  * Le premier hiver de l'IA (1974-1980)
+  * Le __premier hiver de l'IA__ (1974-1980)
 
 
 ## L'ère des systèmes experts (années 80) {.smaller}
@@ -291,11 +291,12 @@ _Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
 
 - L'objectif de l'apprentissage: détecter des régularités statistiques fines
     - Algorithmes plutôt qu'hypothèses
-    - Modèles plus ou moins complexes selon le type de tâche: _machine learning_ -> réseaux de neurones
+    - Modèles plus ou moins complexes selon le type de tâche:
+        - _Machine learning_ -> réseaux de neurones
 
 . . .
 
-- Approche scientifique adaptée à l'extrapolation
+- Approche scientifique adaptée à l'__[extrapolation]{.orange}__
 
 . . .
 
@@ -304,14 +305,14 @@ _Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
 
 ## Comment évaluer un modèle d'apprentissage ?  {.smaller}
 
-- Apprentissage supervisé: la variable qu'on essaie de prédire est mesurable
+- __[Apprentissage supervisé]{.orange}__: la variable qu'on essaie de prédire est mesurable
   - Evaluation de la qualité de l'algo sur le passé est la partie "aisée"
   - Enjeu de contrôle de la qualité des performances dans le temps
   - Enjeu de la collecte continue de données (annotations)
 
 . . .
 
-- Apprentissage non supervisé: on essaie de réaliser une tâche mais on n'a pas de mesure de la variable cible
+- __[Apprentissage non supervisé]{.orange}__: on essaie de réaliser une tâche mais on n'a pas de mesure de la variable cible
   - Exemples: profil de consommateur, sujets de discussion, etc.
   - Collecte d'annotations pour renforcer le modèle sur des tâches données (exemple: bien répondre à des questions)
 
@@ -354,13 +355,13 @@ Les modèles génératifs posent des défis supplémentaires, par exemple l'hall
 
 . . .
 
-- L'apprentissage est porteur de promesse
+- L'apprentissage est [__porteur de promesses__]{.orange}
     - Très bonnes performances pour des tâches complexes
     - Mais ce n'est pas miraculeux (_no free lunch_)
 
 . . .
 
-- Adopter une organisation humaine et technique pour maintenir un modèle de qualité
+- Adopter une [__organisation humaine et technique__]{.orange} pour maintenir un modèle de qualité
     - Même les meilleurs modèles nécessitent un travail humain important ([`ChatGPT`](https://time.com/6247678/openai-chatgpt-kenya-workers/))
 
 
