@@ -279,7 +279,7 @@ import {debounce} from "@mbostock/debouncing-input"
 ## IA génératives : des espoirs démesurés ?
 
 ::: {#fig-hype}
-![](_histoire/img/2023-hype-cycle.png)
+![](https://raw.githubusercontent.com/linogaliana/20241015-prez-ia-masa/main/_histoire/img/2023-hype-cycle.png)
 
 _Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
 :::
@@ -300,7 +300,7 @@ _Hype Cycle for Emerging Technologies, 2023_ [@rimol_delisi_gartner_2023]
 
 . . .
 
-![](/_histoire/img/pipeline1.png)
+![](https://raw.githubusercontent.com/linogaliana/20241015-prez-ia-masa/main/_histoire/img/pipeline1.png)
 
 
 ## Comment évaluer un modèle d'apprentissage ?  {.smaller}
